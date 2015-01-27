@@ -1,0 +1,110 @@
+extends ../../../layout/layout.jade
+//- affiliation/index
+
+block content
+    .wrapper_principal
+        //- contenedor afiliacion
+        .wrapper_affiliation
+            h1 AFÍLIATE AQUÍ
+            p.info_affiliation Podrás comprar en mas de <strong>80</strong>
+            p.info_affiliation portales online y más de <strong>75,000</strong>
+            p.info_affiliation <strong>establecimientos</strong> afiliados
+            p.info_affiliation a <strong>VISA</strong> a nivel nacional.
+        //- contenedor del formulario
+        .wrapper_form
+            form(class="frmRegister",name="register") 
+                label.lbl_celular(for="celular") Celular
+                //- select del operador
+                #iOperador.select(required)
+                    span.selectImg
+                    span.selectText Operador
+                    select(required)
+                        option(value) Operador
+                        option(value=1) Claro
+                        option(value=2) Movistar
+                        option(value=3) Bitel
+                        option(value=4) Entel
+                //- formulario de celular
+                input#xMovil(type="text",placeholder="numero de celular")
+                #pagoefectivoAlreadyRegister
+                //- teclado virtual
+                #numericKeypad
+                    ul
+                        li.clean
+                            a
+                //- pin de seguridad
+                .pin_segurity
+                    label.lbl_pin_security(for="pin_segurity") PIN de seguridad(4digitos)
+                    .input_passowrd
+                        .input_xpin
+                            input#xPin(type="password",placeholder="***")
+                            .candado
+                        .arrow_left
+                    .info_pin_security
+                        p.info  Ingresa tu PIN de seguridad
+                        p.info usando el teclado virtual
+                        a(href="javascript:;") ¿Olvidaste tu PIN?
+                //- informacion de la afiliciacion
+                .info_affiliation
+                    .info 
+                        p Si deseas modificar algún dato personal, porfavor
+                        p contáctanos al 6150000
+                //- select del tipo de documento
+                .lbl_document_expiriation
+                    label.lbl_document(for="document") Documento
+                    label.lbl_expiriation(for="expiriation") Caducidad
+                    .quest
+                .select(required)
+                    span.selectImg
+                    span.selectText DNI
+                    select(required)
+                        option(value) DNI
+                        option(value=1) Carnet
+                        option(value=2) Pasaporte
+                        option(value=3) Tiket
+                        option(value=4) Residencia
+                //- input de numero de documento dni y calendario     
+                input#txtDocument(type="text",placeholder="Nº doc")
+                .picker
+                    input#xCaducidad(type="picker")  
+                    span
+                //- nombres
+                label.lbl_names(for="names") Nombres
+                input#txtName(type="text")
+                //- apellidos
+                label.lbl_surnames(for="surnames") Apellidos
+                input#txtSurnames(type="text")
+                input#txtSurnames(type="text")
+                //- email
+                label.lbl_email(for="surnames") Email
+                input#txtEmail(type="email")
+                //-chebox de terminos   
+                .chx_condition
+                    input#chxCondition(type="checkbox")
+                    .info
+                        p Acepto las condiciones del servicio y la política de 
+                        p Privacidad de Pago Efectivo   
+                .chx_condition
+                    input#chxCondition(type="checkbox")
+                    .info
+                        p Deseo recibir boletines,campañas e información de                         
+                        p Pago Efectivo
+                //- link de loguearse si ya estas registrado
+                .link_login
+                   .info
+                        p Si ya estas registrado
+                        a(href="javascript") Inicia seción aquí
+                //- boton siguiente paso
+                .btn_next_step
+                    p SIGUIENTE PASO
+        //- contenedor de sprite friends
+        .wrapper_image_friends
+        //- contenedor de tiendas
+        .wrapper_stores
+            p.title_stores Establecimientos afiliados
+            a(href="javascript:;",class="all_view") Ver todos
+            .sprites_stores
+                .ofertop
+                .play
+                .tucloset
+                .jockey

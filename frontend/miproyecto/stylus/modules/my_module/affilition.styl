@@ -1,0 +1,234 @@
+@require '../../_config/*'
+@require '../../_mixins/*'
+.wrapper_principal
+    width 980px
+    margin 0 auto
+    position relative
+    .wrapper_affiliation
+        margin-top 46px
+        font-family $familyMediumItalic  
+        display inline-block
+        vertical-align top  
+        .title_affiliation
+            font-size 38px
+        .info_affiliation
+            margin 0
+            font-size 24px
+            strong 
+                font-family $familySemiBoldItalic
+    .wrapper_form
+        font-family $familyMediumItalic
+        background-color #7c7c7c
+        width 420px
+        padding 26px
+        position absolute
+        top 30px
+        right 10px
+        .frmRegister
+            //- para todos los input
+            #xMovil
+            #txtSurnames
+            #txtName
+            #txtEmail
+            #txtDocument
+                padding-left 10px 
+                border-radius 3px
+                border none
+            .lbl_celular
+                font-size 20px
+                color white
+                margin-bottom 10px
+                display block
+            .select
+                vertical-align initial
+                > select
+                    width 120px
+                    option 
+                        font-family $familyMediumItalic
+            #xMovil
+                display inline-block
+                background-color #fdf18e
+                font-family $familyMediumItalic
+                font-size 20px
+                width 224px
+                height 34px
+            #numericKeypad
+                margin-top 20px
+                margin-left 25px
+                ul
+                    li.clean
+                        a
+                            cursor pointer
+            .pin_segurity
+                display inline-block
+                margin-top 30px
+                .lbl_pin_security
+                    font-size 13px
+                    display block
+                    margin-bottom 10px
+                    color white
+                .input_passowrd
+                    .input_xpin 
+                        position relative
+                        #xPin
+                            
+                            padding-left 50px
+                            width 100px
+                            height 38px
+                            border none
+                        .candado
+                            left 10px
+                            top 6px
+                            position absolute
+                            sprite($icon_padlock)
+                    .arrow_left
+                        cursor pointer
+                        margin-left -3px
+                        sprite($send_pin)
+                    .arrow_left 
+                    .input_xpin
+                        display inline-block
+                        vertical-align top
+                .info_pin_security
+                    margin-top 10px
+                    font-size 13px
+                    .info
+                        margin 0
+                        color white
+                    a 
+                        color white
+                        text-decoration underline
+            //- informacion de la afiliation en el formulario
+            .info_affiliation
+                margin-top 20px
+                text-align center
+                padding 6px
+                sprite($float_cloud)
+                .info
+                    p
+                        color white
+                        margin 0
+                        font-size 13 px
+    
+            //- label document
+            .lbl_document_expiriation
+                .lbl_document
+                .lbl_expiriation
+                    color white
+                    display block
+                    margin-bottom 10px
+                    display inline-block
+                .lbl_expiriation
+                    margin-left 150px
+                .quest
+                    margin-left 10px
+                    display inline-block
+                    sprite($icon_quest_transparent)
+
+            //- input de documento y calendario
+            .picker 
+                #xCaducidad
+                    border-radius 3px
+                    margin 5px
+                    height 34px
+                    border none
+                    width 100px    
+                    padding-left 10px
+            #txtDocument
+                margin 5px
+                height 34px
+                width 100px    
+            //- labels
+            .lbl_names
+            .lbl_surnames
+            .lbl_email
+                display block
+                color white
+                margin-top 10px
+                margin-bottom 10px
+            //- name y email 
+            #txtName
+            #txtEmail
+                width 200px
+                height 34px
+            #txtEmail
+                width 100%
+            #txtSurnames
+                height 34px
+                width 40%
+                margin-right 10px   
+            .chx_condition
+                margin-top 20px
+                #chxCondition
+                .info 
+                    vertical-align top
+                .info
+                    margin-top -5px
+                    display inline-block 
+                    color white
+                    margin-left 12px
+                    margin-top -5px
+                    p 
+                        margin 0
+                        font-size 13px
+            .btn_next_step
+            .link_login
+                display inline-block
+                vertical-align middle
+            .btn_next_step
+                margin-top 20px
+                position relative
+                sprite($btn_yellow)
+                text-align center
+                cursor pointer
+                p 
+                    color black
+                    position absolute
+                    top 20%
+                    left 20%
+            .link_login
+                margin-right 20px
+                margin-top 10px
+                .info 
+                    color white
+                    font-size 12px
+                    p
+                        margin 0
+                    a 
+                        color white
+                        text-decoration underline
+    //-
+    .wrapper_image_friends
+        background-image url('../../../img/friends.png')
+        width 744px
+        height 498px
+        margin-top -60px
+        margin-left -150px
+    .wrapper_stores
+        margin 60px 0
+        .title_stores 
+            font-size 20px
+        .all_view
+            text-decoration underline 
+        .all_view
+        .title_stores
+            display inline-block
+            margin-right 160px
+        .sprites_stores
+            .ofertop
+            .play
+            .tucloset
+            .jockey
+                display inline-block    
+            .ofertop
+                margin-right 20px
+                sprite($logo_afiliados_ofertop)
+            .play
+                margin-right 20px
+                sprite($logo_afiliados_playaccesorios)
+            .tucloset
+                margin-right 20px
+                sprite($logo_afiliados_tucloset)
+            .jockey
+                margin-right 20px
+                sprite($logo_afiliados_jokeyplaza)

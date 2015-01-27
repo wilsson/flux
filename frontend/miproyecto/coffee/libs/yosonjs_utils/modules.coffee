@@ -32,6 +32,7 @@ yOSON.AppSchema.modules =
         log ":D"
         yOSON.AppCore.runModule "select"
         yOSON.AppCore.runModule "validating_cel"
+        yOSON.AppCore.runModule "set_template_underscore"
         yOSON.AppCore.runModule "make_numeric_keypad"
         yOSON.AppCore.runModule "vertical_align_middle"
         yOSON.AppCore.runModule "delegate_width_buttons"

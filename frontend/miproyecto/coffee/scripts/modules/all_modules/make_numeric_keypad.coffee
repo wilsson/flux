@@ -61,8 +61,9 @@ yOSON.AppCore.addModule "make_numeric_keypad", (Sb) ->
             return
 
     fn =
-        makeNumericKeypad : ->
-            $.each( keypad, (i, val) ->
+        makeNumericKeypad : -> 
+            # usando shuffle para desorenar mi arreglo
+            $.each(_.shuffle(keypad), (i, val) ->
                 dom.numeric_keypad.prepend  """
                                                 <li>
                                                     <a id="number_0#{val}" class="number" data-number="#{val}" href="javascript:;"></a>
@@ -75,6 +76,7 @@ yOSON.AppCore.addModule "make_numeric_keypad", (Sb) ->
                     )
                     dom.numeric_keypad.find("a.number").on "click", fn.addNumber
                 return
+
             )
             return
 
