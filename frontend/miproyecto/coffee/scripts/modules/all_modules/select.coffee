@@ -72,18 +72,17 @@ yOSON.AppCore.addModule "select", (Sb) ->
         validateSelect : ->
             dom.select_select.each( (i, item) ->
                 _this = $(item)
-                #if _this.val() is "0"
-                    #log _this.parent()
-                    #_this.parent('.select').removeClass('parsley-success')
+                if _this.val() is "0"
+                    log _this.parent()
+                    _this.parent('.select').removeClass('parsley-success')
                 return
             )
             return
-
     initialize = (oP) ->
         $.extend st, oP
         catchDom()
         suscribeEvents()
-        fn.renderTitle()
+        console.log "enviando"
         Sb.events(['disabledSelect'], fn.disabledSelect, @)
         Sb.events(['validateSelect'], fn.validateSelect, @)
         return

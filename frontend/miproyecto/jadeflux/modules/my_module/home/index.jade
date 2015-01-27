@@ -1,0 +1,75 @@
+extends ../../../layout/layout.jade
+//- affiliation/index
+
+block content
+    .wrapper_principal
+        //- contenedor afiliacion
+        .wrapper_affiliation
+            h1 AFÍLIATE AQUÍ
+            p.info_affiliation Podrás comprar en mas de <strong>80</strong>
+            p.info_affiliation portales online y más de <strong>75,000</strong>
+            p.info_affiliation <strong>establecimientos</strong> afiliados
+            p.info_affiliation a <strong>VISA</strong> a nivel nacional.
+        //- contenedor del formulario
+        .wrapper_form
+            form(class="frmRegister",name="register")
+                .data_celular 
+                    label.lbl_celular(for="celular") Celular
+                    #iOperador.select(required)
+                        span.selectImg
+                        span.selectText Operador
+                        select(required)
+                            option(value) Operador
+                            option(value=1) Claro
+                            option(value=2) Movistar
+                            option(value=3) Bitel
+                            option(value=4) Entel
+                    input#txtCelular(type="text",placeholder="993027014")
+                #numericKeypad
+                    ul
+                        li.clean
+                            a
+                .pin_segurity
+                    label.lbl_pin_security(for="pin_segurity") PIN de seguridad(4digitos)
+                    .input_passowrd
+                        input#xPin(type="password",placeholder="***")
+                        .arrow_left
+                    .info_pin_security
+                        p.info  Ingresa tu PIN de seguridad
+                        p.info usando el teclado virtual
+                        a(href="javascript:;") ¿Olvidaste tu PIN?
+                .info_affiliation
+                    .info 
+                        p Si deseas modificar algún dato personal, porfavor
+                        p contáctanos al 6150000
+                //- document
+                lvl#lbl_document(for="document") Documento
+                .select(required)
+                    span.selectImg
+                    span.selectText DNI
+                    select(required)
+                        option(value) DNI
+                        option(value=1) Carnet
+                        option(value=2) Pasaporte
+                        option(value=3) Tiket
+                        option(value=4) Residencia
+                input#txtDocument(type="text",placeholder="4546477")
+                input#txtCalendar(type="picker")
+                //- nombres
+                label.lbl_names(for="names") Nombres
+                input#txtName(type="text")
+                //- apellidos
+                label.lbl_surnames(for="surnames") Apellidos
+                input#txtSurnames(type="text")
+                input#txtSurnames(type="text")
+                //- email
+                label.lbl_email(for="surnames") Email
+                input#txtEmail(type="email")
+                input#chxCondition(type="checkbox")
+                label.lbl_condition(for="condicional") Acepto las condiciones del servicio y la politica de
+                input#chxCondition(type="checkbox")
+                label.lbl_condition(for="condicional") Deseo recibir boletines,campañas e informacion de 
+                .btn_next_step
+                    p SIGUIENTE PASO
+        //- contenedor de sprite friends
+        .wrapper_image_friends

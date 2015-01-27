@@ -27,7 +27,6 @@ yOSON.AppCore.addModule "expiry", (Sb) ->
             else
                 dom.expiryImg.fadeIn().addClass("active")
             return
-
     initialize = (oP) ->
         $.extend st, oP
         catchDom()
@@ -37,3 +36,4 @@ yOSON.AppCore.addModule "expiry", (Sb) ->
     return {
         init: initialize
     }
+

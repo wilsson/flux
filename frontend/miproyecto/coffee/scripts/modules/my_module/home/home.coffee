@@ -1,0 +1,1 @@
+yOSON.AppCore.addModule "demo", ->

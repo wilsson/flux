@@ -29,6 +29,7 @@ yOSON.AppSchema.modules =
     "by_default": () ->
         return
     "all_modules": () ->
+        log ":D"
         yOSON.AppCore.runModule "select"
         yOSON.AppCore.runModule "validating_cel"
         yOSON.AppCore.runModule "make_numeric_keypad"

@@ -2,96 +2,93 @@
 * Layout
 * @module layout
 * @class header
-* @author Paúl Díaz
+* @author Wilson Flres
 */
 
-header
-    background none repeat scroll 0 0 #feca00
-    height     75px
-    h1
-        display  inline-block
+// stylos para - task - header
+.header_task
+    background-image url('../../../img/header_background.jpg')
+    height 180px
+    .wrapper_autor
+        background-color #f5bf00
+        .autor 
+            padding-right 10px
+            line-height 33px
+            margin 0 auto
+            width 980px
+            font-size 13px
+            text-align right
+    .wrapper_banner
         position relative
-        top      15px
-    h2
-        position    relative
-        top         32px
-        text-align  right
-        font-family $familyMediumItalic
-    > div
-        > a
-            color      black
-            font-size  rem(13px)
-            float      right
-            margin-top rem(8px)
-            transition color .3s linear 0s
-            &:hover
-                color $gray_4a
-    .tools_sesion
-        position  absolute
-        top       rem(45px)
-        right     0
-        font-size rem(13px)
-        > ul
-            > li
-                display      inline-block
-                padding      0 15px
-                border-right 1px solid black
-                &:last-child
-                    border-right none
-                    padding      0 0 0 15px
-                > a
-                    display block
-                    &#closeSesion
-                        span
-                            sprite($close_sesion)
-                            display        inline-block
-                            vertical-align middle
-                            margin-left    rem(5px)
-    .affiliation_buttons
-        position    absolute
-        right       0
-        bottom      13px
-        font-family $familyMediumItalic
-        font-size   rem(15px)
-        ul
-            li
-                display        inline-block
-                vertical-align top
-                a
-                    sprite($step_unactive)
-                    position   relative
-                    display    block
-                    padding    15px 25px
+        width 980px
+        margin 0 auto
+        .logo
+            position absolute
+            top -33px
+            padding-left 10px
+            width $logo_width
+            height $logo_height
+            sprite($logo)
+        .steps_form
+            top 17px
+            position absolute
+            right 0
+            width 420px
+            height 100px
+            .step_sprite_active
+                sprite($step_active)
+            .step_sprite_unactive
+                sprite($step_unactive)
+            .step_sprite_active
+            .step_sprite_unactive
+                width $step_active_width
+                height $step_active_height
+                position absolute
+                display inline-block
+                bottom 0
+            .step_sprite_active
+                left 0
+            .step_sprite_unactive.one
+                left 137px
+            .step_sprite_unactive.two
+                left 274px
+            .step_sprite_active
+            .step_sprite_unactive
+                .wrapper_info
                     text-align center
-                    span
-                        color         white
-                        position      absolute
-                        top           -25px
-                        left          50%
-                        margin        0 0 0 -15px
-                        width         30px
-                        height        30px
-                        line-height   30px
-                        background    $gray_83
-                        border-radius 50%
-                        opacity       .8
-                        transition    all .3s linear 0s
-                        behavior      url($othersPath + 'pie/PIE.htc')
-                    &.active
-                        sprite($step_active)
-                        span
-                            color       black
-                            background  $yellow_01
-                            top         -27px
-                            border      5px solid white
-                            width       35px
-                            height      35px
-                            line-height 25px
-                            margin      0 0 0 -18px
-                    &:hover
-                        span
-                            color      black
-                            background $yellow_01
-.first_title
-    margin     150px
-    text-align center
+                    margin-top 10px
+                    .info
+                        font-size 17px
+                        font-family $familyMediumItalic
+                        margin 0
+                    .number_sprite_active
+                        position relative
+                        text-align center
+                        width $number_active_width
+                        height $number_active_height
+                        sprite($number_active)
+                    .number_sprite_unactive
+                        position relative
+                        text-align center
+                        width $number_unactive_width
+                        height $number_unactive_height
+                        sprite($number_unactive)
+                    .number_sprite_unactive
+                    .number_sprite_active   
+                        margin 0 auto
+                    .number_sprite_active  
+                        margin-top -95px
+                        position relative
+                        .number
+                            position absolute
+                            top 10px
+                            left 18px
+                    .number_sprite_unactive
+                        position relative
+                        margin-top -85px   
+                        .number
+                            color white
+                            position absolute
+                            top 4px
+                            left 10px                   
+                                                

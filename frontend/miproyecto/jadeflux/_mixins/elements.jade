@@ -12,3 +12,6 @@ mixin anchor(href2, title2, target2, clase2)
             a(class="#{clase2}", href="javascript:;", title="#{title2}", target="#{target2}") #{title2}
         - else
             a(class="#{clase2}", href="#{href2}", title="#{title2}", target="#{target2}") #{title2}
+
+mixin form_total(action4,name4,method4,class4)
+    form(action="#{action4}",name="#{name4}",method="#{method4}",class="class4")
