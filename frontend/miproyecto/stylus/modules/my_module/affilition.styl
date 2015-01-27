@@ -1,20 +1,28 @@
+/*!!
+ * affiliation
+ * @controller affiliation
+ * @module my_module
+ * @author wilson flores
+ */
+
 @require '../../_config/*'
 @require '../../_mixins/*'
+
 .wrapper_principal
     width 980px
     margin 0 auto
     position relative
     .wrapper_affiliation
         margin-top 46px
-        font-family $familyMediumItalic  
+        font-family $familyMediumItalic
         display inline-block
-        vertical-align top  
+        vertical-align top
         .title_affiliation
             font-size 38px
         .info_affiliation
             margin 0
             font-size 24px
-            strong 
+            strong
                 font-family $familySemiBoldItalic
     .wrapper_form
         font-family $familyMediumItalic
@@ -24,14 +32,14 @@
         position absolute
         top 30px
         right 10px
-        .frmRegister
+        #frmAffiliate
             //- para todos los input
             #xMovil
             #txtSurnames
             #txtName
             #txtEmail
             #txtDocument
-                padding-left 10px 
+                padding-left 10px
                 border-radius 3px
                 border none
             .lbl_celular
@@ -43,7 +51,7 @@
                 vertical-align initial
                 > select
                     width 120px
-                    option 
+                    option
                         font-family $familyMediumItalic
             #xMovil
                 display inline-block
@@ -68,10 +76,10 @@
                     margin-bottom 10px
                     color white
                 .input_passowrd
-                    .input_xpin 
+                    .input_xpin
                         position relative
                         #xPin
-                            
+
                             padding-left 50px
                             width 100px
                             height 38px
@@ -85,7 +93,7 @@
                         cursor pointer
                         margin-left -3px
                         sprite($send_pin)
-                    .arrow_left 
+                    .arrow_left
                     .input_xpin
                         display inline-block
                         vertical-align top
@@ -95,7 +103,7 @@
                     .info
                         margin 0
                         color white
-                    a 
+                    a
                         color white
                         text-decoration underline
             //- informacion de la afiliation en el formulario
@@ -109,7 +117,7 @@
                         color white
                         margin 0
                         font-size 13 px
-    
+
             //- label document
             .lbl_document_expiriation
                 .lbl_document
@@ -126,18 +134,18 @@
                     sprite($icon_quest_transparent)
 
             //- input de documento y calendario
-            .picker 
+            .picker
                 #xCaducidad
                     border-radius 3px
                     margin 5px
                     height 34px
                     border none
-                    width 100px    
+                    width 100px
                     padding-left 10px
             #txtDocument
                 margin 5px
                 height 34px
-                width 100px    
+                width 100px
             //- labels
             .lbl_names
             .lbl_surnames
@@ -146,7 +154,7 @@
                 color white
                 margin-top 10px
                 margin-bottom 10px
-            //- name y email 
+            //- name y email
             #txtName
             #txtEmail
                 width 200px
@@ -156,19 +164,19 @@
             #txtSurnames
                 height 34px
                 width 40%
-                margin-right 10px   
+                margin-right 10px
             .chx_condition
                 margin-top 20px
                 #chxCondition
-                .info 
+                .info
                     vertical-align top
                 .info
                     margin-top -5px
-                    display inline-block 
+                    display inline-block
                     color white
                     margin-left 12px
                     margin-top -5px
-                    p 
+                    p
                         margin 0
                         font-size 13px
             .btn_next_step
@@ -176,12 +184,14 @@
                 display inline-block
                 vertical-align middle
             .btn_next_step
+                background-color transparent
+                border none
                 margin-top 20px
                 position relative
                 sprite($btn_yellow)
                 text-align center
                 cursor pointer
-                p 
+                p
                     color black
                     position absolute
                     top 20%
@@ -189,12 +199,12 @@
             .link_login
                 margin-right 20px
                 margin-top 10px
-                .info 
+                .info
                     color white
                     font-size 12px
                     p
                         margin 0
-                    a 
+                    a
                         color white
                         text-decoration underline
     //-
@@ -206,10 +216,10 @@
         margin-left -150px
     .wrapper_stores
         margin 60px 0
-        .title_stores 
+        .title_stores
             font-size 20px
         .all_view
-            text-decoration underline 
+            text-decoration underline
         .all_view
         .title_stores
             display inline-block
@@ -219,7 +229,7 @@
             .play
             .tucloset
             .jockey
-                display inline-block    
+                display inline-block
             .ofertop
                 margin-right 20px
                 sprite($logo_afiliados_ofertop)

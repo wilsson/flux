@@ -12,7 +12,7 @@ block content
             p.info_affiliation a <strong>VISA</strong> a nivel nacional.
         //- contenedor del formulario
         .wrapper_form
-            form(class="frmRegister",name="register") 
+            form#frmAffiliate(name="affiliation")
                 label.lbl_celular(for="celular") Celular
                 //- select del operador
                 #iOperador.select(required)
@@ -24,8 +24,9 @@ block content
                         option(value=2) Movistar
                         option(value=3) Bitel
                         option(value=4) Entel
-                //- formulario de celular
-                input#xMovil(type="text",placeholder="numero de celular")
+                //- formulario de ce1lular
+                input#xMovil(type="tel" data-parsley-length=[9, 9] maxlength="9" placeholder="numero de celular" required)
+                //-input#xMovil(type="text",placeholder="numero de celular")
                 #pagoefectivoAlreadyRegister
                 //- teclado virtual
                 #numericKeypad
@@ -46,7 +47,7 @@ block content
                         a(href="javascript:;") ¿Olvidaste tu PIN?
                 //- informacion de la afiliciacion
                 .info_affiliation
-                    .info 
+                    .info
                         p Si deseas modificar algún dato personal, porfavor
                         p contáctanos al 6150000
                 //- select del tipo de documento
@@ -63,10 +64,10 @@ block content
                         option(value=2) Pasaporte
                         option(value=3) Tiket
                         option(value=4) Residencia
-                //- input de numero de documento dni y calendario     
+                //- input de numero de documento dni y calendario
                 input#txtDocument(type="text",placeholder="Nº doc")
                 .picker
-                    input#xCaducidad(type="picker")  
+                    input#xCaducidad(type="picker")
                     span
                 //- nombres
                 label.lbl_names(for="names") Nombres
@@ -78,16 +79,16 @@ block content
                 //- email
                 label.lbl_email(for="surnames") Email
                 input#txtEmail(type="email")
-                //-chebox de terminos   
+                //-chebox de terminos
                 .chx_condition
                     input#chxCondition(type="checkbox")
                     .info
-                        p Acepto las condiciones del servicio y la política de 
-                        p Privacidad de Pago Efectivo   
+                        p Acepto las condiciones del servicio y la política de
+                        p Privacidad de Pago Efectivo
                 .chx_condition
                     input#chxCondition(type="checkbox")
                     .info
-                        p Deseo recibir boletines,campañas e información de                         
+                        p Deseo recibir boletines,campañas e información de
                         p Pago Efectivo
                 //- link de loguearse si ya estas registrado
                 .link_login
@@ -95,7 +96,7 @@ block content
                         p Si ya estas registrado
                         a(href="javascript") Inicia seción aquí
                 //- boton siguiente paso
-                .btn_next_step
+                button.btn_next_step
                     p SIGUIENTE PASO
         //- contenedor de sprite friends
         .wrapper_image_friends

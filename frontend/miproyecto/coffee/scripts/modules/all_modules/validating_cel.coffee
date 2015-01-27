@@ -13,7 +13,7 @@ yOSON.AppCore.addModule "validating_cel", (Sb) ->
     st =
         txt_cel                       : "#xMovil"
         momo_pin                      : "#momoPin"
-        select_operator               : "#iOperador"
+        select_operator               : "#iOpeador"
         pin                           : "#xPin"
         pagoefectivo_already_register : "#pagoefectivoAlreadyRegister"
         change_personal_data          : "#changePersonalData"
