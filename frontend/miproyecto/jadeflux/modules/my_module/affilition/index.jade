@@ -44,7 +44,12 @@ block content
                     .info_pin_security
                         p.info  Ingresa tu PIN de seguridad
                         p.info usando el teclado virtual
-                        a(href="javascript:;") ¿Olvidaste tu PIN?
+                        +anchor("#btnPrintStepsGuide","¿Olvidaste tu PIN?","","fancybox_inline")
+                #btnPrintStepsGuide(style="display:none;")
+                    label(for="email") email
+                    input(type="email" maxlength="10" required placeholder="email")
+                    span ingrese su email para poder enviarle sus credenciales
+                    button(type="submit" value="enviar") enviar
                 //- informacion de la afiliciacion
                 .info_affiliation
                     .info
