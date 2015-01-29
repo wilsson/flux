@@ -7,7 +7,7 @@
 
 @require '../../_config/*'
 @require '../../_mixins/*'
-
+    
 .wrapper_principal
     width 980px
     margin 0 auto
@@ -33,15 +33,6 @@
         top 30px
         right 10px
         #frmAffiliate
-            //- para todos los input
-            #xMovil
-            #txtSurnames
-            #txtName
-            #txtEmail
-            #txtDocument
-                padding-left 10px
-                border-radius 3px
-                border none
             .lbl_celular
                 font-size 20px
                 color white
@@ -54,12 +45,11 @@
                     option
                         font-family $familyMediumItalic
             #xMovil
+                input_total(10px,3px,"none",224px,34px)
                 display inline-block
                 background-color #fdf18e
                 font-family $familyMediumItalic
                 font-size 20px
-                width 224px
-                height 34px
             #numericKeypad
                 margin-top 20px
                 margin-left 25px
@@ -79,7 +69,6 @@
                     .input_xpin
                         position relative
                         #xPin
-
                             padding-left 50px
                             width 100px
                             height 38px
@@ -143,9 +132,8 @@
                     width 100px
                     padding-left 10px
             #txtDocument
+                input_total(10px,3px,"none",100px,34px)
                 margin 5px
-                height 34px
-                width 100px
             //- labels
             .lbl_names
             .lbl_surnames
@@ -156,14 +144,12 @@
                 margin-bottom 10px
             //- name y email
             #txtName
-            #txtEmail
-                width 200px
-                height 34px
+                input_total(10px,3px,"none",200px,34px)
             #txtEmail
                 width 100%
+                input_total(10px,3px,"none",100%,34px)
             #txtSurnames
-                height 34px
-                width 40%
+                input_total(10px,3px,"none",40%,34px)
                 margin-right 10px
             .chx_condition
                 margin-top 20px

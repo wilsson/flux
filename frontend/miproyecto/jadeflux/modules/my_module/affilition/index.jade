@@ -25,7 +25,7 @@ block content
                         option(value=3) Bitel
                         option(value=4) Entel
                 //- formulario de ce1lular
-                input#xMovil(type="tel" data-parsley-length=[9, 9] maxlength="9" placeholder="numero de celular" required)
+                input#xMovil(data-parsley-type="number" data-parsley-length=[9, 9] maxlength="9" placeholder="numero de celular"  type="tel" required)
                 //-input#xMovil(type="text",placeholder="numero de celular")
                 #pagoefectivoAlreadyRegister
                 //- teclado virtual
@@ -38,7 +38,7 @@ block content
                     label.lbl_pin_security(for="pin_segurity") PIN de seguridad(4digitos)
                     .input_passowrd
                         .input_xpin
-                            input#xPin(type="password",placeholder="***")
+                            input#xPin(type="password" placeholder="***")
                             .candado
                         .arrow_left
                     .info_pin_security
@@ -65,28 +65,28 @@ block content
                         option(value=3) Tiket
                         option(value=4) Residencia
                 //- input de numero de documento dni y calendario
-                input#txtDocument(type="text",placeholder="Nº doc")
+                input#txtDocument(data-parsley-type="number" data-parsley-length=[8, 8] maxlength="8" type="text" placeholder="Nº doc" required)
                 .picker
                     input#xCaducidad(type="picker")
                     span
                 //- nombres
                 label.lbl_names(for="names") Nombres
-                input#txtName(type="text")
+                input#txtName(type="text" required)
                 //- apellidos
                 label.lbl_surnames(for="surnames") Apellidos
-                input#txtSurnames(type="text")
-                input#txtSurnames(type="text")
+                input#txtSurnames(data-parsley-type="alphanum" data-parsley-length=[1, 10] maxlength="10" type="text" required)
+                input#txtSurnames(data-parsley-type="alphanum" data-parsley-length=[1, 10] maxlength="10" type="text" required)
                 //- email
                 label.lbl_email(for="surnames") Email
-                input#txtEmail(type="email")
+                input#txtEmail(type="email" required)
                 //-chebox de terminos
                 .chx_condition
-                    input#chxCondition(type="checkbox")
+                    input#chxCondition(type="checkbox" required)
                     .info
                         p Acepto las condiciones del servicio y la política de
                         p Privacidad de Pago Efectivo
                 .chx_condition
-                    input#chxCondition(type="checkbox")
+                    input#chxCondition(type="checkbox" required)
                     .info
                         p Deseo recibir boletines,campañas e información de
                         p Pago Efectivo
