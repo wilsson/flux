@@ -32,7 +32,7 @@ block content
                 #numericKeypad
                     ul
                         li.clean
-                            a
+                            +anchor()
                 //- pin de seguridad
                 .pin_segurity
                     label.lbl_pin_security(for="pin_segurity") PIN de seguridad(4digitos)
@@ -94,7 +94,7 @@ block content
                 .link_login
                    .info
                         p Si ya estas registrado
-                        a(href="javascript") Inicia seción aquí
+                        +anchor("","Inicia seción aquí") 
                 //- boton siguiente paso
                 button.btn_next_step
                     p SIGUIENTE PASO
@@ -103,7 +103,7 @@ block content
         //- contenedor de tiendas
         .wrapper_stores
             p.title_stores Establecimientos afiliados
-            a(href="javascript:;",class="all_view") Ver todos
+            +anchor("","Ver todos","","all_view")
             .sprites_stores
                 .ofertop
                 .play
